@@ -9,7 +9,7 @@ function App() {
         <div className='Contacto'>
           <ul>
             <li>Comalcalco, Tabasco</li>
-            <li><a href='https://www.linkedin.com/in/devmarvinsc' target='_blank'>LinkedIn</a></li>
+            <li><a href='https://www.linkedin.com/in/devmarvinsc' target='_blank'rel='noopener noreferrer'>LinkedIn</a></li>
             <li><a href='https://github.com/DevMarvinSC' target='_blank'>GitHub</a></li>
           </ul>
           <ul>
