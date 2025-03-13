@@ -1,32 +1,35 @@
 import React from 'react';
 
-function App() {
+function App() { /* Inicio del componente */
   return (
     <div className="App">
-      <div className='Nombre'>
-          <h1>Marvin Javier Sánchez Carrasco</h1>
-        </div>
-        <div className='Contacto'>
-          <ul>
-            <li>Comalcalco, Tabasco</li>
-            <li><a href='https://www.linkedin.com/in/devmarvinsc' target='_blank'rel='noopener noreferrer'>LinkedIn</a></li>
-            <li><a href='https://github.com/DevMarvinSC' target='_blank'>GitHub</a></li>
-          </ul>
-          <ul>
-            <li>Correo: marvinjsc44@gmail.com</li>
-            <li>Teléfono: 933-173-3755</li>
-          </ul>
-        </div>
+      <section> {/*Encapsulamiento mediante section para separar cada una de las partes de la estructura del modelo
+        Harvard lo que mantiene una mejor organización y distribución de los nodos en su espacio asignado*/}
+        <div className='Nombre'>
+            <h1>Marvin Javier Sánchez Carrasco</h1> {/*Nodo h1 para título principal*/}
+          </div>
+          <div className='Contacto'>
+            <ul>
+              <li>Comalcalco, Tabasco</li>  {/*Nodo ul y li para hacer listas de elementos y nodo a para hipervínculos*/}
+              <li><a href='https://www.linkedin.com/in/devmarvinsc' target='_blank'rel='noopener noreferrer'>LinkedIn</a></li>
+              <li><a href='https://github.com/DevMarvinSC' target='_blank'rel='noopener noreferrer'>GitHub</a></li>
+            </ul>
+            <ul>
+              <li>Correo: marvinjsc44@gmail.com</li>
+              <li>Teléfono: 933-173-3755</li>
+            </ul>
+          </div>
+      </section>
 
         <hr/>
         <section>
-          <h2>EDUCACIÓN</h2>
+          <h2>EDUCACIÓN</h2>  {/*Nodos h2, h4 para subtítulos en distintos niveles*/}
           <div className='info'>
             <h4>Universidad Juárez Autónoma de Tabasco</h4>
             <h4>Cunduacán, Tabasco</h4>
           </div>
           <div className='Descripcion'>
-            <p>Ingeniero en Sistemas Computacionales</p>
+            <p>Ingeniero en Sistemas Computacionales</p>    {/*Nodo p para párrafos de texto*/}
             <p>Febrero 2022, a la fecha</p>
           </div>
 
@@ -112,9 +115,10 @@ function App() {
           </div>
         </section>
         <hr/>
+        {/*Nodo script para tomar dependencias exterenas, en este caso de bootstrap*/}
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </div>
   );
-}
+} /*Fin del componente */
 
 export default App; 
